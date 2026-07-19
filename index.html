@@ -164,6 +164,26 @@
   }
   .include-list li::before{content:"—"; color:var(--gold);}
 
+  /* EJEMPLO DE CARTA */
+  .example-note{
+    max-width:680px; font-size:16px; color:var(--cream-dim); margin:18px 0 46px;
+  }
+  .example-gallery{
+    display:flex; flex-direction:column; gap:40px; align-items:center;
+  }
+  .example-frame{
+    border:1px solid var(--gold-dark); padding:14px; background:var(--black-2);
+    max-width:560px; width:100%;
+  }
+  .example-frame img{width:100%; display:block;}
+  .example-frame .cap{
+    font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.12em; color:var(--gold-dark);
+    text-align:center; margin-top:12px; text-transform:uppercase;
+  }
+  .example-more{
+    text-align:center; margin-top:8px; font-size:15px; color:var(--cream-dim);
+  }
+
   /* SOBRE MI */
   .bio-block{display:grid; grid-template-columns:0.4fr 1fr; gap:48px; align-items:start;}
   @media (max-width:760px){ .bio-block{grid-template-columns:1fr;} }
@@ -214,6 +234,7 @@
     <div class="brand"><span class="phi-mark">Φ</span> PHI</div>
     <div class="navlinks">
       <a href="#servicio">Servicio</a>
+      <a href="#ejemplo">Cómo son nuestras cartas</a>
       <a href="#proceso">Proceso</a>
       <a href="#sobre-mi">Sobre nosotros</a>
       <a href="#faq">Preguntas</a>
@@ -242,6 +263,7 @@
     <div class="hero-phi">Φ<div class="hero-word">P&nbsp;&nbsp;H&nbsp;&nbsp;I</div></div>
   </div>
   <p class="hero-tag">Cartas natales calculadas con precisión astronómica real.</p>
+  <a href="#ejemplo" class="btn" style="margin-top:30px; display:inline-block;">Mirá cómo son nuestras cartas</a>
 </section>
 
 <div class="credits-strip">
@@ -392,6 +414,39 @@
       </ul>
     </div>
   </div>
+</section>
+
+<hr class="rule">
+
+<!-- EJEMPLO DE CARTA -->
+<section id="ejemplo" class="section wrap">
+  <p class="eyebrow">Mirá el resultado</p>
+  <h2 class="h2-lead" style="max-width:640px;">Cómo son nuestras cartas.</h2>
+  <p class="example-note">Este es un fragmento real de una carta PHI entregada, con el nombre cambiado por uno de fantasía para proteger la identidad de quien la pidió. Los cálculos, aspectos y estructura son exactamente los que recibe cada cliente.</p>
+
+  <div class="example-gallery">
+    <div class="example-frame">
+      <img src="ejemplo_01.png" alt="Portada de carta natal PHI, ejemplo" loading="lazy">
+      <p class="cap">Portada</p>
+    </div>
+    <div class="example-frame">
+      <img src="ejemplo_03.png" alt="Posiciones planetarias y sistema de casas, ejemplo" loading="lazy">
+      <p class="cap">Posiciones planetarias · sistema de casas</p>
+    </div>
+    <div class="example-frame">
+      <img src="ejemplo_06.png" alt="Arquetipos junguianos, ejemplo" loading="lazy">
+      <p class="cap">Arquetipos junguianos</p>
+    </div>
+    <div class="example-frame">
+      <img src="ejemplo_08.png" alt="Tabla de aspectos mayores, ejemplo" loading="lazy">
+      <p class="cap">Aspectos mayores</p>
+    </div>
+    <div class="example-frame">
+      <img src="ejemplo_12.png" alt="Cierre del informe, ejemplo" loading="lazy">
+      <p class="cap">Cierre</p>
+    </div>
+  </div>
+  <p class="example-more">Vamos a ir sumando más ejemplos de cartas entregadas.</p>
 </section>
 
 <hr class="rule">
